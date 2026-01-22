@@ -9,8 +9,12 @@ const CollectionForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Optional: Log data before redirecting (for debugging)
     console.log("Form submitted:", { whatsappNumber, mpesaNumber });
-    // Handle form submission logic here
+
+    // --- REDIRECT LOGIC HERE ---
+    window.location.href = "https://hub-five-coral.vercel.app/";
   };
 
   return (
